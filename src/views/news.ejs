@@ -5,9 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
     <title>News-Web</title>
   </head>
   <body>
-    <h1>Test</h1>
+    <header class="header">
+      <div class="header__logo">News Web</div>
+      <div class="header__search">Search</div>
+    </header>
+
+    <div class="wrapper">
+      <div class="news">
+        <% articles.forEach((article,index) => { %>
+        <a href="#" class="news__card">
+          <h2><%- article.title %></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod omnis ad repellendus voluptatum dignissimos velit atque dolore beatae
+            mollitia deserunt.
+          </p>
+        </a>
+        <% }) %>
+      </div>
+    </div>
   </body>
 </html>
