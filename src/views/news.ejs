@@ -20,11 +20,9 @@
       <div class="news">
         <% articles.forEach((article,index) => { %>
         <a href="#" class="news__card">
+          <img src="<%- article.urlToImage %> " alt="img" />
           <h2><%- article.title %></h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod omnis ad repellendus voluptatum dignissimos velit atque dolore beatae
-            mollitia deserunt.
-          </p>
+          <p><%- article.description %></p>
         </a>
         <% }) %>
       </div>
