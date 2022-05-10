@@ -18,13 +18,15 @@
 
     <div class="wrapper">
       <div class="news">
-        <% articles.forEach((article,index) => { %>
+        <% if (articles != null) { %> <% articles.forEach((article,index) => { %>
         <a href="#" class="news__card">
           <img src="<%- article.urlToImage %> " alt="img" />
           <h2><%- article.title %></h2>
           <p><%- article.description %></p>
         </a>
-        <% }) %>
+        <% }) %> <% } else { %>
+        <h2>Not found</h2>
+        <% } %>
       </div>
     </div>
   </body>
