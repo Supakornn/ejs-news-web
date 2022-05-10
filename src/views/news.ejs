@@ -19,7 +19,7 @@
     <div class="wrapper">
       <div class="news">
         <% if (articles != null) { %> <% articles.forEach((article,index) => { %>
-        <a href="#" class="news__card">
+        <a href="/article/<%- article.id %> " class="news__card">
           <img src="<%- article.urlToImage %> " alt="img" />
           <h2><%- article.title %></h2>
           <p><%- article.description %></p>
