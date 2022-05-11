@@ -20,19 +20,6 @@ h2 {
   color: #fff;
   background-color: #10555a;
   margin-bottom: 10px;
-
-  &__search {
-    input[type="text"] {
-      padding: 6px;
-      border: none;
-    }
-    input[type="submit"] {
-      float: right;
-      padding: 6px 10px;
-      border: none;
-      cursor: pointer;
-    }
-  }
 }
 
 .wrapper {
