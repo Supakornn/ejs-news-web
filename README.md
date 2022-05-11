@@ -13,7 +13,8 @@ npm run dev || yarn rundev
 NEWS_PRI_URL=
 ```
 
-Expample
+<h3>Expample</h3>
+
 ![](https://cdn.discordapp.com/attachments/922772649816498217/973828709540831242/unknown.png)
 
 ## Support
