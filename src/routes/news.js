@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const axios = require("axios");
+require("dotenv").config();
 
 router.get("", async (req, res) => {
   try {
-    const { data } = await axios.get("https://newsapi.org/v2/top-headlines?country=th&apiKey=63c1ed853d4c4142afe1195e9ff48276");
+    const { data } = await axios.get(process.env.NEWS_API_URL);
     res.render("news", { articles: data.articles });
     console.log(data);
   } catch (error) {
