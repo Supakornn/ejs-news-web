@@ -13,18 +13,17 @@
   <body>
     <header class="header">
       <div class="header__logo">News Web</div>
-      <div class="header__search">Search</div>
     </header>
 
     <div class="wrapper">
       <div class="news">
         <% if (articles != null) { %> <% articles.forEach((article,index) => { %>
-        <a href="/article/<%- article.id %> " class="news__card">
+        <a href=" <%- article.url %>" target="_blank" class="news__card">
           <img src="<%- article.urlToImage %> " alt="img" />
           <h2><%- article.title %></h2>
           <p><%- article.description %></p>
         </a>
-        <% }) %> <% } else { %>
+        <% }) %> <% } else { %>1
         <h2>Not found</h2>
         <% } %>
       </div>
